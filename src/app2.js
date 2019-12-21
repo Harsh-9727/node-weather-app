@@ -25,7 +25,7 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'WELCOME PAGE!',
+        title: 'WEATHER FORECAST!',
         name: 'SODHA HARSH'
     })
 })
@@ -72,7 +72,7 @@ app.get('/weather', (req, res) => {
             address: req.query.address
           })
           //console.log(location)
-         // console.log(forecastdata)
+          console.log(forecastdata)
             
         })
         })
